@@ -1,0 +1,239 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Header */
+.main-header {
+    background-color: #1a4fd6;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.main-header .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.main-header .main-nav a:hover {
+    background-color: #358ee7;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.hero-section .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero-section .cta-btn {
+    display: inline-block;
+    background-color: #358ee7;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-section .cta-btn:hover {
+    background-color: #1a4fd6;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.services-section .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 2rem;
+    color: #1a4fd6;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #1a4fd6;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: #1a4fd6;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    color: #358ee7;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-card a {
+    display: inline-block;
+    background-color: #1a4fd6;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-card a:hover {
+    background-color: #358ee7;
+}
+
+/* Logo Header Section */
+.logo-header {
+    background-color: #1a4fd6; /* Matches the website's primary color */
+    padding: 50px 10px;
+    text-align: center;
+    position: relative; /* Ensures proper layering */
+    color: #fff;
+    border-bottom: 5px solid #358ee7; /* Decorative border */
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.logo-background {
+    position: absolute;
+    top: 50%; /* Center the image vertically */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    width: 150px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.2; /* Makes the logo a faint background */
+    z-index: 0; /* Ensures it stays behind the text */
+}
+
+.logo-title {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1; /* Places the text above the logo */
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+    margin: 0;
+}
+
